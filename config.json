@@ -1,0 +1,26 @@
+{
+  "wallet": {
+    "addressKeyName": "test",
+    "addressRestoreMnemonic": "<SEED_PHRASE_HERE>",
+    "alloraHomeDir": "",
+    "gas": "auto",
+    "gasAdjustment": 1.5,
+    "nodeRpc": "<REPLACE_RPC_HERE>",
+    "maxRetries": 10,
+    "delay": 5,
+    "maxFees": 26250000,
+    "gasPrices": 10,
+    "submitTx": true
+  },
+  "worker": [
+    {
+      "topicId": 13,
+      "inferenceEntrypointName": "api-worker",
+      "loopSeconds": 5,
+      "parameters": {
+        "InferenceEndpoint": "http://inference:9191/inference/5/{Token}",
+        "Token": "ETH"
+      }
+    }
+  ]
+}
