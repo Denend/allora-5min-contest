@@ -15,7 +15,7 @@
   "worker": [
     {
       "topicId": 13,
-      "inferenceEntrypointName": "api-worker",
+      "inferenceEntrypointName": "api-worker-reputer",
       "loopSeconds": 5,
       "parameters": {
         "InferenceEndpoint": "http://inference:9191/inference/5/{Token}",
